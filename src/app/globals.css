@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("../fonts//satoshi//WEB//fonts//Satoshi-Variable.woff2");
+}
+
+* {
+  font-family: "Satoshi-Variable" !important;
+  scroll-behavior: smooth;
+}
+/* Define the animation keyframes */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0); /* Start and end position */
+  }
+  50% {
+    transform: translateY(-20px); /* Bounce up position */
+  }
+}
+
+/* Apply the animation to your image */
+.bounce {
+  animation: bounce 2s infinite; /* 2s duration, infinite loop */
+}
+
+.dsample {
+  transform: scale(3);
+  /* filter: grayscale(5px); */
+}
+
+.righty {
+  animation: bouncetf 2.3s ease-in-out infinite alternate;
+}
+
+@keyframes bouncetf {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+.login {
+  /* background: linear-gradient(120deg, rgb(149, 174, 226), #ffffff); */
+}
